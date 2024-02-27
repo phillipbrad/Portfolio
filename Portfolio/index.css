@@ -1,0 +1,288 @@
+body {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
+   background-image: url(https://getwallpapers.com/wallpaper/full/c/1/6/6346.jpg);
+
+}
+
+header {
+ background-color: #333;
+ position: fixed;
+ width: 100%;
+ border-bottom: solid 0.0625em #c6c1c1;
+ top: 0;
+ display: flex;
+ justify-content: space-between;
+ color: whitesmoke;
+ 
+}
+
+
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  float: right;
+
+  
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 1.875em;
+  font-family: 'Raleway', monospace, sans-serif;
+  margin-top: 1em;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.25em;
+  margin-left: 1em;
+  font-weight: bolder;
+}
+nav ul li a:hover {
+  color: black;
+}
+
+
+#name {
+  margin-right: 1.25em;
+  display: flex;
+  font-family: 'Raleway', monospace, sans-serif;
+  
+  
+  
+}
+
+
+
+
+.message-container {
+   position: static;
+   box-sizing: border-box;
+   border: 2px solid #3f3f3f;
+   padding: 20px;
+   font-family: 'Raleway', monospace, sans-serif;
+   font-size: 22px;
+   white-space: normal;
+   overflow: hidden;
+   width: 60%;
+   text-align: center;
+   border-radius: 0.5em;
+   margin-left: 2px;
+   top: 5%;
+   display: flex;
+   flex-direction: column;
+   margin-top: 2.3em;
+   color: whitesmoke;
+   z-index: 5;
+   word-wrap: break-word; 
+   overflow-wrap: break-word; 
+}
+
+
+#about-me {
+   position: static;
+   text-align: center;
+   width: 60%; 
+   display: flex;
+   flex-direction: column;
+   margin-top: 1.25em;
+   font-family: 'Raleway', monospace, sans-serif;
+   line-height: 150%;
+   font-size: 1.375em;
+   border: #333 solid 0.125em;
+   border-radius: 0.5em;
+   bottom: 2%;
+   top: 2%;
+   padding-left: 0.2em;
+   padding-right: 0.2em;
+   background-color: #403f3f;
+   color: whitesmoke;
+}
+
+#project1 {
+  border: #3f3f3f solid 0.25em;
+  color: whitesmoke;
+  text-align: center;
+  height: auto;
+  width: 31.25em;
+  margin: 1.25em;
+  border-radius: 0.5em;
+  font-family: 'Raleway', monospace, sans-serif;
+  line-height: 150%;
+}
+
+#project2 {
+   border: #3f3f3f solid 0.25em;
+   color: whitesmoke;
+   text-align: center;
+   height: auto;
+   width: 31.25em;
+   border-radius: 0.5em;
+   font-family: 'Raleway', monospace, sans-serif;
+   line-height: 150%;
+}
+
+#true-north {
+   height: 12.5em;
+   width: 12.5em;
+   padding: 0.625em;
+}
+
+#pinot-pals {
+   height: 12.5em;
+   width: 12.5em;
+   padding: 0.625em;
+}
+
+#contact {
+   color: whitesmoke;
+   font-family: 'Raleway', monospace, sans-serif;
+   text-align: center;
+ }
+   
+
+  
+
+#github-logo {
+   position: fixed;
+   width: 3em;
+   height: 3em;
+   bottom: 0.5em;
+   right: 25%;
+}
+
+#html-logo {
+   position: fixed;
+   width: 3em;
+   height: 3em;
+   bottom: 0.5em;
+   right: 1%;
+}
+
+#css-logo {
+   position: fixed;
+   width: 3em;
+   height: 3em;
+   bottom: 0.5em;
+   left: 25%;
+}
+
+#javascript-logo {
+   position: fixed;
+   width: 6em;
+   height: 3em;
+   bottom: 0.5em;
+   left: 1%;
+}
+
+/*media query for mobiles*/
+@media only screen and (max-width: 376px){
+   #name{
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 425px) {
+   
+   header {
+      background-color: rgba(71, 71, 71, 0.8);
+      border-bottom: none;
+   }
+
+   #name {
+      font-size: 1.2em;
+   }
+
+
+   nav ul {
+      margin-top: 0;
+      align-items: center;
+      
+   }
+
+   nav ul li {
+      left: 0;
+      margin-right: none;
+      padding: 0;
+
+   }
+
+   nav ul li a {
+      float: left;
+      font-size: 1em;
+      margin-left: 0;
+   }
+
+   #name {
+      margin-right: 0.2em;
+   }
+
+   .message-container,
+   #about-me {
+      width: 90%; 
+      font-size: 1em;
+   }
+
+   .message-container {
+
+      height: 6em;
+   }
+
+   #about-me {
+      margin-top: 18em;
+      position: static;
+      font-size: 1em;
+   }
+
+   #project1,
+   #project2 {
+      width: 90%; 
+      height: auto;
+      
+    }
+    #project1 {
+      margin-top: 20em;
+      
+      }
+
+      #project2 {
+         margin-bottom: 12em;
+      }
+
+    #true-north {
+      padding: 0.3em;
+      
+    }
+    #pinot-pals {
+      padding: 0.3em;
+    }
+ 
+    
+    
+}
+
+/*tablet*/
+@media only screen and (max-width: 768px){
+   
+   #about-me {
+      margin-top: 20em;
+      
+}
+
+#project1 {
+   margin-top: 12em;
+ }
+
+ #project2 {
+   margin-bottom: 12em;
+ }
+}
